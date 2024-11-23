@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     "services",
     'rest_framework',
     "api",
-    "corsheaders"
+    "corsheaders",
+    "whitenoise.runserver_nonstatic"
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'corsheaders.middleware.CorsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "Backend.urls"

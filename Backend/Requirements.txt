@@ -5,3 +5,4 @@ dnspython
 bcrypt
 requests
 django-cors-headers
+whitenoise
