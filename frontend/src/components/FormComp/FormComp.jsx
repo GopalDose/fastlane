@@ -28,7 +28,7 @@ const FormComp = ({ addrType, data, setData, setOpenForm, setIsValid }) => {
                 access_token: localStorage.getItem('access_token'), // Get access token from localStorage
             };
 
-            const response = await fetch('http://127.0.0.1:8000/api/validate_address/', {
+            const response = await fetch('http://13.16.115.78:8000/api/validate_address/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload),
