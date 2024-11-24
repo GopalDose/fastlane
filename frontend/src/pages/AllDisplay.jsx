@@ -7,7 +7,7 @@ const AllDisplay = () => {
 
   // Fetch the data when the component mounts
   useEffect(() => {
-    fetch('http://13.16.115.78:8000/api/all_details/')
+    fetch('http://16.16.105.70:8000/api/all_details/')
       .then(response => response.json()) // Parse JSON response
       .then(fetchedData => setData(fetchedData)) // Set the fetched data into state
       .catch(error => console.error('Error fetching data:', error));
