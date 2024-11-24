@@ -55,7 +55,7 @@ const ShippingCost = () => {
     };
 
     try {
-      const response = await fetch('http://13.16.115.78:8000/api/get_shipping/', {
+      const response = await fetch('http://16.16.105.70:8000/api/get_shipping/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
