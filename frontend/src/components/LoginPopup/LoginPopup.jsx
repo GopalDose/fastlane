@@ -25,8 +25,8 @@ const LoginPopup = ({ setShowLogin }) => {
         }
 
         const endpoint = isLogin
-            ? 'http://127.0.0.1:8000/api/login/'
-            : 'http://127.0.0.1:8000/api/register/'; // Different endpoint for login vs register
+            ? 'http://13.16.115.78:8000/api/login/'
+            : 'http://13.16.115.78:8000/api/register/'; // Different endpoint for login vs register
 
         try {
             const response = await fetch(endpoint, {
